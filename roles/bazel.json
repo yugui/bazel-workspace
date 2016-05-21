@@ -1,0 +1,21 @@
+{
+  "name": "bazel",
+  "description": "bazel development role",
+  "run_list": [
+    "recipe[yugui-dotfiles::default]",
+    "recipe[java]",
+    "recipe[yugui-devtools::default]",
+    "recipe[yugui-devtools::cxx]",
+    "recipe[yugui-devtools::go]"
+  ],
+  "default_attributes": {
+    "java": {
+      "install_flavor": "oracle",
+      "jdk_version": 8,
+      "set_etc_environment": true,
+      "oracle": {
+        "accept_oracle_download_terms": true
+      }
+    }
+  }
+}

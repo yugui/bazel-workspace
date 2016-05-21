@@ -1,5 +1,5 @@
 /.gclient_entries
 /.vagrant
-/chef
 /bazel
 /rules_go
+/cookbooks

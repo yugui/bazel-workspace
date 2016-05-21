@@ -1,0 +1,43 @@
+DEPENDENCIES
+  java
+  yugui-devtools
+    path: cookbooks/yugui-devtools
+    metadata: true
+  yugui-dotfiles
+    path: cookbooks/yugui-dotfiles
+    metadata: true
+
+GRAPH
+  apt (3.0.0)
+  build-essential (4.0.0)
+    mingw (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  chef_handler (1.4.0)
+  compat_resource (12.10.3)
+  dmg (2.4.0)
+  git (4.5.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  golang (1.7.0)
+  java (1.39.0)
+    apt (>= 0.0.0)
+  mingw (1.0.0)
+    compat_resource (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  seven_zip (2.0.0)
+    windows (>= 1.2.2)
+  sudo (2.9.0)
+  windows (1.41.0)
+    chef_handler (>= 0.0.0)
+  yugui-devtools (0.1.0)
+    apt (>= 0.0.0)
+    git (>= 0.0.0)
+    golang (>= 0.0.0)
+    sudo (>= 0.0.0)
+  yugui-dotfiles (0.1.0)
+    yugui-devtools (>= 0.0.0)
+  yum (3.10.0)
+  yum-epel (0.7.0)
+    yum (>= 3.6.3)
