@@ -2,4 +2,5 @@
 /.vagrant
 /bazel
 /rules_go
+/skydoc
 /cookbooks
